@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<title>WEATHER FORCASTE</title>
+</head>
+<body>
+	<div class="mdiv">
+		<div class="container">
+			<h3 id="heading1" class="slideInRight" align="center">WEATHER FORECAST</h3>
+			<form>
+				<div class="component">
+					<div>
+				<input type="text" name="city" id="City_name" placeholder="Enter City Name">
+			</div>
+			<div class="btn">
+				<button type="button" class="srch_btn" onclick="fetchCity()">
+					<img src="https://cdn-icons-png.flaticon.com/512/149/149852.png" alt="search icon" height="20px">
+				</button>
+			</div>
+		</div>
+		<br>
+		<div align="center" style="margin-top:-30px;">
+			<img src="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png" alt="weathericon" height="150px">
+		</div>
+		<div align="center" style="margin-top:-20px">
+			<span id="city">CITY NAME</span>
+			<br>
+			<span class="measurement" id="temp">0°C</span>
+		</div>
+		<div align="center" style="margin-top:20px">
+			<table width="100%" cellpadding="10px">
+				<tr align="center">
+					<td>
+						<h5 id="headings2" class="slideInRight">WIND SPEED</h5>
+						<span class="measurement" id="wind_speed">0 km/hr</span>
+					</td>
+					<td>
+						<h4 id="headings3" class="slideInRight">HUMIDITY</h4>
+						<span class="measurement" id="humidity">0 g/kg</span>
+					</td>
+				</tr>
+			</table>
+		</div>
+			</form>
+			
+		</div>
+	</div>
+
+
+</body>
+</html>
